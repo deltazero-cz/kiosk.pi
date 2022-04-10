@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+## (c) 2022 David Obdrzalek - @DeltaZero - (ISC) */
+
+while read -r oneline; do
+  key=$(echo "$oneline" | grep "key released" | awk '{print $6}')
+  if [ -n "$key" ]; then
+    case "$key" in
+      "up")
+        xdotool key Up
+        ;;
+      "down")
+        xdotool key Down
+        ;;
+      "left")
+        xdotool key Left
+        ;;
+      "right")
+        xdotool key Right
+        ;;
+      "select")
+        xdotool key Return
+        ;;
+    esac
+  fi
+done

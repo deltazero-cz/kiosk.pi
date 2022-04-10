@@ -1,0 +1,10 @@
+xorg
+x11-xserver-utils
+xserver-xorg-video-fbdev
+fonts-noto-color-emoji
+feh
+gjs
+gnome-themes-standard
+gir1.2-webkit2-4.0
+cec-utils
+xdotool
