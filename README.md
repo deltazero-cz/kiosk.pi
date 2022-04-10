@@ -20,7 +20,7 @@ git clone --depth 1 https://github.com/deltazero-cz/kiosk.pi.git
 ```
 
 For further details refer to:
-- pi-git: https://github.com/RPi-Distro/pi-gen
+- pi-gen: https://github.com/RPi-Distro/pi-gen
 - my article: https://medium.com/@deltazero/making-kioskpi-custom-raspberry-pi-os-image-using-pi-gen-99aac2cd8cb6
 
 ## Enjoy 🥂
