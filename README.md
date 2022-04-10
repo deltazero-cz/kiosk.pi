@@ -12,7 +12,7 @@ Also listens to TV's remote signals via HTMI-CEC and translates them as key stro
 Use Ubuntu or other Debian-based systems
 
 ```bash
-git clone --depth 1 https://github.com/https://github.com/deltazero-cz/kiosk.pi.git
+git clone --depth 1 https://github.com/deltazero-cz/kiosk.pi.git
 ./init.sh
 # make changes to config (file)
 # make changes to stage3-custom
@@ -21,6 +21,6 @@ git clone --depth 1 https://github.com/https://github.com/deltazero-cz/kiosk.pi.
 
 For further details refer to:
 - pi-git: https://github.com/RPi-Distro/pi-gen
-- my article: https://medium.com/p/99aac2cd8cb6
+- my article: https://medium.com/@deltazero/making-kioskpi-custom-raspberry-pi-os-image-using-pi-gen-99aac2cd8cb6
 
 ## Enjoy 🥂
