@@ -9,8 +9,8 @@ touch ./pi-gen/stage2/SKIP_IMAGES ./pi-gen/stage2/SKIP_NOOBS
 ## link config
 ln -s ../config ./pi-gen
 
-## link stage3-custom
-ln -s ../stage3-custom ./pi-gen
+## link stage2-kiosk
+ln -s ../stage2-kiosk ./pi-gen
 
 ## link future deploys
 [[ ! -d ./pi-gen/deploy ]] && mkdir ./pi-gen/deploy

@@ -13,4 +13,4 @@ xrandr --output HDMI-1 --rotate left
 feh --bg-scale splash.png
 
 # start the cec-client & browser
-(cec-client | cec2keyboard) & browser --fullscreen "${URL:='https://deltazero.cz'}"
+(cec-client | cec2kbd) & browser --fullscreen "${URL:='https://deltazero.cz'}"

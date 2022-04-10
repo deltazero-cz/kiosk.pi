@@ -1,6 +1,7 @@
 xorg
 x11-xserver-utils
 xserver-xorg-video-fbdev
+xserver-xorg-video-fbturbo
 fonts-noto-color-emoji
 feh
 gjs
@@ -8,3 +9,4 @@ gnome-themes-standard
 gir1.2-webkit2-4.0
 cec-utils
 xdotool
+vim

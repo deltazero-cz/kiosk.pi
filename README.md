@@ -15,8 +15,8 @@ Use Ubuntu or other Debian-based systems
 git clone --depth 1 https://github.com/deltazero-cz/kiosk.pi.git
 ./init.sh
 # make changes to config (file)
-# make changes to stage3-custom
-./build.sh
+# make changes to stage2-kiosk
+sudo ./build.sh
 ```
 
 For further details refer to:

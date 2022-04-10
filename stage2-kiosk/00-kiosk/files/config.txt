@@ -77,8 +77,10 @@ arm_boost=1
 
 [all]
 gpu_mem=128
+avoid_warnings=1
 disable_splash=1
 dtoverlay=disable-bt
+boot_delay=0
 
 [pi3]
 gpu_mem=256
