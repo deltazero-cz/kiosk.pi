@@ -2,7 +2,10 @@
 
 . "${BASE_DIR}/config"
 on_chroot << EOF
-echo "${FIRST_USER_NAME}:$(echo "${FIRST_USER_PASS}" | openssl passwd -6 -stdin)" > /boot/userconf.txt
+echo -n "${FIRST_USER_NAME:='pi'}:" > /boot/userconf.txt
+openssl passwd -5 "${FIRST_USER_PASS:='raspberry'}" >> /boot/userconf.txt
+touch /boot/ssh
+
 echo "${KIOSK_URL}" > /boot/kiosk.url
 chown 1000:1000 /boot/kiosk.url
 
@@ -15,6 +18,7 @@ install -m 644 files/cmdline.txt "${ROOTFS_DIR}/boot/"
 
 HOME="${ROOTFS_DIR}/home/${FIRST_USER_NAME}"
 install -m 755 -o 1000 -g 1000 files/kiosk.sh "${HOME}/"
+install -m 755 -o 1000 -g 1000 files/firstrun.sh "${HOME}/"
 install -m 644 -o 1000 -g 1000 files/.profile "${HOME}/"
 install -m 644 -o 1000 -g 1000 files/.xinitrc "${HOME}/"
 install -m 644 -o 1000 -g 1000 files/.hushlogin "${HOME}/"

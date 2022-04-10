@@ -26,7 +26,12 @@ alias l='ls -CF'
 alias s='sudo'
 alias sus='sudo -s'
 
+# first-run script
+[[ -f ./firstrun.sh ]] && ./firstrun.sh
+
 # silent startx on video console
 
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && startx > /dev/null 2>&1
-exit
+if [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]]; then
+  startx > /dev/null 2>&1
+  exit
+fi
